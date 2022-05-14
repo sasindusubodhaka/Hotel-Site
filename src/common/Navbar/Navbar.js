@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import logo from '../../images/logo.png'
 
 function Navbar() {
     const [click, setClick] = useState(false)
@@ -12,7 +13,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className='container flex_space'>
                     <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? "fas fa-times" : "fas fa-bars"}></i>                                                      
+                        <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
                     </div>
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li><Link to='./' onClick={closeMobileMenu}>Home</Link></li>
@@ -44,6 +45,33 @@ function Navbar() {
                 </div>
 
             </nav>
+            <header>
+                <div className='container flex_space'>
+                    <div className='logo'>
+                        <img className = "logo-image" src={logo} alt='' />
+                    </div>
+                    <div className='contact flex_space'>
+                        <div className='box flex_space'>
+                            <div className='icons'>
+                                <i className='fas fa-phone'></i>
+                            </div>
+                            <div className='text'>
+                                <h4>Call Us</h4>
+                                <Link to="/contact">+11 123 5679</Link>
+                            </div>
+                        </div>
+                        <div className='box flex_space'>
+                            <div className='icons'>
+                                <i className='fas fa-envelope'></i>
+                            </div>
+                            <div className='text'>
+                                <h4>Mail Us</h4>
+                                <Link to="/contact">sunnyhotel@gmail.com</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
         </>
     )
 }
