@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import logo from '../../images/logo.png'
+// import logo from '/images/logo.png'
 
 function Navbar() {
     const [click, setClick] = useState(false)
@@ -48,7 +48,7 @@ function Navbar() {
             <header>
                 <div className='container flex_space'>
                     <div className='logo'>
-                        <img className = "logo-image" src={logo} alt='' />
+                        <img className = "logo-image" src="/images/logo.png" alt='' />
                     </div>
                     <div className='contact flex_space'>
                         <div className='box flex_space'>
