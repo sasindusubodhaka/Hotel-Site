@@ -6,6 +6,7 @@
 }
 body{
   font-family: "Poppins", sans-serif;
+   /* overflow: hidden;   */
 }
 a {
   text-decoration: none;  
@@ -23,6 +24,7 @@ a {
 .container{
   max-width: 85%;
   margin: auto;
+ 
 
 }
 

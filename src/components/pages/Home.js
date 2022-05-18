@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import Hero from '../HomeSection/Hero'
+import HomeAbout from '../HomeSection/HomeAbout';
 
 const Home = () => {
     useEffect(() => {
@@ -8,6 +9,7 @@ const Home = () => {
     return (
         <>            
             <Hero />
+            <HomeAbout />
         </>
     )
 }

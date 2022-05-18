@@ -2,8 +2,9 @@ import React ,{useEffect} from 'react'
 import { BrowserRouter as  Router, Route, Routes } from 'react-router-dom'
 import Navbar from './common/Navbar/Navbar'
 import './App.css'
+import Home from './components/pages/Home'
+import About from './components/About/About'
 
-const Home = React.lazy(()=>import('./components/pages/Home'))
 
 
 const App=() =>{
@@ -16,6 +17,7 @@ const App=() =>{
         <Navbar />
         <Routes>
           <Route path ='/' exact element={<Home />}></Route>      
+          <Route path ='/about' exact element={<About />}></Route>  
         </Routes>
 
       </Router>
