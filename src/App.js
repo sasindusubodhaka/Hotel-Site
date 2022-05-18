@@ -4,6 +4,8 @@ import Navbar from './common/Navbar/Navbar'
 import './App.css'
 import Home from './components/pages/Home'
 import About from './components/About/About'
+import Gallery from './components/Gallery/Gallery'
+import Login from './components/login/Login'
 
 
 
@@ -18,6 +20,8 @@ const App=() =>{
         <Routes>
           <Route path ='/' exact element={<Home />}></Route>      
           <Route path ='/about' exact element={<About />}></Route>  
+          <Route path = '/gallery' exact element={<Gallery />}></Route>
+          <Route path = '/sign-in' exact element={<Login />}></Route>
         </Routes>
 
       </Router>

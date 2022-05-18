@@ -19,9 +19,6 @@ function Navbar() {
                         <li><Link to='./' onClick={closeMobileMenu}>Home</Link></li>
                         <li><Link to='./about' onClick={closeMobileMenu}>About</Link></li>
                         <li><Link to='./gallery' onClick={closeMobileMenu}>Gallery</Link></li>
-                        <li><Link to='./destination' onClick={closeMobileMenu}>Destination</Link></li>
-                        <li><Link to='./blog' onClick={closeMobileMenu}>Blog</Link></li>
-                        <li><Link to='./testimonail' onClick={closeMobileMenu}>Testimonail</Link></li>
                         <li><Link to='./contact' onClick={closeMobileMenu}>Contact Us</Link></li>
 
                     </ul>
@@ -48,7 +45,7 @@ function Navbar() {
             <header>
                 <div className='container flex_space'>
                     <div className='logo'>
-                        <img className = "logo-image" src="/images/logo.png" alt='' />
+                        <img className="logo-image" src="/images/logo.png" alt='' />
                     </div>
                     <div className='contact flex_space'>
                         <div className='box flex_space'>
